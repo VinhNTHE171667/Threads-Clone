@@ -21,10 +21,10 @@ export default function UpdateProfilePage() {
 	const navigate = useNavigate();
 	const [user, setUser] = useRecoilState(userAtom);
 	const [inputs, setInputs] = useState({
-		name: user.name,
-		username: user.username,
-		email: user.email,
-		bio: user.bio,
+		name: user?.name || "",
+		username: user?.username || "",
+		email: user?.email || "",
+		bio: user?.bio || "",
 		password: "",
 	});
 	const fileRef = useRef(null);
