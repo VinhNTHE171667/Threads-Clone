@@ -168,5 +168,5 @@ export default function UpdateProfilePage() {
 		</form>
 	);
 }
-console.log("User state:", user);
-console.log("Navigating to:", `/${user?.username}`);
+// console.log("User state:", user);
+// console.log("Navigating to:", `/${user?.username}`);
